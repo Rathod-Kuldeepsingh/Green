@@ -1,0 +1,643 @@
+<html>
+
+<head>
+  <meta charset="UTF_8">
+  <meta http-equiv="X-UA-Compatible" content="Ie=edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title> Greenplantoz.com</title>
+  <link rel="stylesheet" href="Greenplantoz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 6%;
+    background-color: 297045;
+    display: flex;
+   
+}
+.left{
+    width: 50%;
+}
+.left p{
+     margin: 10px 0;
+     color: white;
+     font-size: 1rem;
+     padding-left: 20px;
+    }
+.right{
+    margin: 9px 0;
+    text-align: right;
+    width: 50%;
+    padding-right: 20px;
+}
+.right a{
+    font-size: 1rem;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+.firstsection{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: 8vh;
+}
+.first-heading{
+    margin: 8px 0;
+    width: 30%;
+    font-size: 2rem;
+    color: black;
+    padding-left: 20px;
+}
+.first-heading span{
+    color:297045;
+}
+.second-heading{
+   
+    width: 11.5%;
+    margin:9px 0;
+ }
+ .second-heading select{
+    border: 1px solid grey;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px 15px 10px 20px;
+    font-size: 1rem;
+ }
+ .third-section{
+    width: 18.4%;
+    margin:9px 0;
+ }
+ .third-section input{
+    padding: 6.5px 2px 6px 2px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border:1px solid grey
+ }
+ .four-section{
+    width: 3.2%;
+    margin: 9px 0;
+ }
+ .four-section button{
+    font-size: 1.5rem;
+    padding: 8px 6px 8px 6px;
+    border: 1px solid black;
+    border-color: 297045;
+    cursor: pointer;
+    background-color:  297045;
+    color: white;
+    
+ }
+ .person{
+    width: 5%;
+     margin: 15px 5px 0px 250px;
+     font-size: 1.7rem;
+     cursor: pointer;
+ }
+ .card-section{
+    width: 5%;
+    margin: 15px 5px 0px 70px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.container {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .nav{
+    display: none;
+  }
+  .section-2{
+   display: flex;
+    width: 100%;
+    height: 6vh;
+    background-color: #faf9f9;
+  }
+  .navigation-2{
+    font-size: 1.1rem;
+    padding: 10px 0px 0px 200px;
+    width: 30%;
+    cursor: pointer;
+
+  }
+
+  .desktop-menu{
+    width: 50%;
+    
+  }
+  .desktop-menu ul{
+   display: flex; 
+   list-style: none;
+}
+.desktop-menu li a{
+    text-decoration: none; 
+    color: black;
+}
+.desktop-menu li{
+    padding: 10px 0px 0px 40px;
+}
+.button-login{
+    width: 10%;
+    margin: 10px 0;
+
+}
+.button-login button{
+    padding: 5px 30px 5px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    border-color: 297045;
+    background-color: 297045;
+    color: #faf9f9;
+    cursor: pointer;
+}
+.navigation-2 span:hover{
+    background-color: 297045;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+
+}
+
+.desktop-menu ul li :hover{
+  background-color:297045;
+  border-radius: 3px;
+  padding: 5px 20px 5px 20px;
+  color: white;
+}
+.sub-menu-1{
+  display:none;
+  color: white;
+ 
+}
+.desktop-menu ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: 297045;
+  color: white;
+  width: 20%;
+  margin: 5px 0;
+}
+.desktop-menu ul li:hover .sub-menu-1 ul{
+ 
+  display: block;
+  margin: 10px ;
+  color: white;
+
+}
+.desktop-menu ul li:hover .sub-menu-1 ul li{
+  display: block;
+  margin: 10px ;
+  color: white;
+
+}
+.section-3{
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+
+}
+.left-3{
+
+  margin: 40px 0;
+  width: 60%;
+  height: 83.5%;
+  background-color: #faf9f9;
+}
+.box-1{
+  width: 100%;
+  height: 45%;
+  
+  margin-top: 20px;
+}
+.box-1 img{
+    padding-left: 110px;
+}
+.right-3{
+
+  margin: 20px 0;
+  width: 35%;
+  height: 90%;
+  display: block;
+ background-color: white;
+}
+.box-2{
+  width: 80%;
+  height: 45%;
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color:  #faf9f9;
+  
+}
+.box-2 img{
+  width: 70%;
+  height: 100%;
+  padding-left: 110px;
+}
+.box-3{
+  width: 100%;
+  margin-left: 0px;
+
+  height: 100%;
+  margin-top: 20px;
+  display: block;
+  background-color: #faf9f9;
+  
+}
+.box-3 img{
+  width: 80%;
+  height: 100%;
+  padding-left: 110px;
+}
+.title-1{
+   margin-top: -25rem;
+   margin-left: 60px;
+   font-size: 0.9rem;
+   color: 297045;
+}
+.title-1 .first-text{
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 900;
+  font-family: 'popins',sans-serif;
+}
+
+.title-1 .second-text{
+  font-size: 2.5rem;
+  color: 297045;  
+  font-weight: 900;
+  font-family: 'popins',sans-serif;
+
+}
+.left-3 button
+{
+  background-color: 297045;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  border-color: 297045;
+  margin: 100px 0;
+  margin-left: 60px;
+  padding: 5px 20px 5px 20px;
+}
+@media screen and (max-width:480px){
+    nav{
+        width: 100%;
+        height: 6%;
+        background-color: 297045;
+        display: flex;
+       justify-content: space-around;
+    }
+    .left p{
+        font-size: 0.7rem;
+    }
+    .right a{
+        font-size: 0.7rem;
+    }
+    .firstsection{
+    display: flex;
+    width: 100%;
+    background-color: faf9f9;
+    height: 6vh;
+    }
+    .second-heading{
+       display: none;
+    
+     }
+    .third-section{
+        display: none;
+    }
+    .four-section{
+        display: none;
+    }
+    .first-heading{
+        margin: 5px 0;
+        width: 90%;
+        font-size: 1.1rem;
+        color: black;
+        padding-left: 20px;
+    }
+    .person{
+        width: 5%;
+        margin: 15px 5px 0px 20px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    .card-section{
+        width: 5%;
+        margin: 15px 5px 0px 20px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        margin: 5px 0;
+        padding-left: 10px;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 22px;
+        height: 2.5px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 8.5px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -7px) rotate(45deg);
+      }
+
+      .nav li{
+        font-size: 1.1rem;
+        font-weight: 200;
+        list-style: none;
+        padding: 15px 0;
+        width: 100%;
+        border-bottom: none;
+        text-align: center;
+    
+     }
+     .nav{
+        padding: 0;
+        transition: 5s ease;
+        display: none;
+        
+       
+    
+     }
+     .nav li a{
+       
+        color: black;
+        text-decoration: none;
+     }
+    
+     
+     .changes{
+    
+        background-color: #faf9f9;
+        height: 70vh;
+        margin: 0;
+        position:absolute;
+        font-size: 30px;
+        top: 0;
+        z-index: -1;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .section-2{
+        display: none;
+    }
+    .section-3{
+        width: 100%;
+        display: block;
+        height: 100vh;
+      
+      }
+      .left-3{
+       
+        margin: 40px 0;
+        width: 100%;
+        height: 50%;
+        background-color: #faf9f9;
+      }
+      .box-1{
+        
+        width: 100%;
+        height: 45%;
+        
+        margin-top: 20px;
+      }
+      .box-1 img{
+          width: 70%;
+      }
+      .title-1{
+        margin-top: -10rem;
+        margin-left:20px;
+        font-size: 0.7rem;
+        color: 297045;
+     }
+     .title-1 .first-text{
+       font-size: 1rem;
+       color: black;
+       font-weight: 900;
+       font-family: 'popins',sans-serif;
+     }
+     
+     .title-1 .second-text{
+       font-size: 1rem;
+       color: 297045;  
+       font-weight: 900;
+       font-family: 'popins',sans-serif;
+     
+     }
+     .left-3 button
+     {
+     
+       background-color: 297045;
+       color: white;
+       font-size: 0.6rem;
+       border: 1px solid black;
+       cursor: pointer;
+       border-color: 297045;
+       margin-left: 20px;
+       padding: 3px 07px 3px 7px;
+     }
+     
+}
+</style>
+<body>
+
+  <header>
+    <nav>
+
+      <div class="left">
+        <p> Welcome to our online store! </p>
+      </div>
+      <div class="right">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="navigation">
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="nav" id="nav">
+        <li> <a href="#">Home</a> </li>
+        <li> <a href="#">Shop</a></li>
+        <li> <a href="#">Blog</a></li>
+        <li> <a href="#">Pages</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Login</a></li>
+      </ul>
+      </div>
+      <div class="first-heading"><span>G</span>reen-<span>P</span>lantoz</div>
+      <div class="second-heading">
+        <select>
+          <option>All Categories</option>
+          <option>Cacti</option>
+          <option>Ferns</option>
+          <option>Hanging plants</option>
+          <option>Hot sale</option>
+          <option>Palms</option>
+          <option>Succulents</option>
+        </select>
+      </div>
+      <div class="third-section">
+        <input type="text " placeholder="Search Here...">
+      </div>
+      <div class="four-section">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="person">
+        <i class="fa-solid fa-user" style="color: 297045;"></i>
+      </div>
+      <div class="card-section">
+        <i class="fa-solid fa-bag-shopping" style="color: 297045;"></i>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="navigation-2">
+        <span>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: 297045;"></i>
+        All Categories </span>
+      </div>  
+      <div class="desktop-menu">  
+           <ul>  
+           <li> <a href="#">HOME    </a></li>
+           <li> <a href="#">SHOP   <i class="fa-solid fa-angle-down"></i></a>
+            <div class="sub-menu-1">
+              <ul> 
+                <li > <a href="#">SHOP LAYOUTS </a></li>
+                <li > <a href="#">PRODUCT LAYOUTS  </a></li>
+                <li > <a href="#">PRODUCT TYPES  </a></li>
+                <li > <a href="#">CATEGORIES  </a></li>
+                <li > <a href="#">PRODUCT EXTENDS  </a></li>
+                <li > <a href="#">OTHER PAGES  </a></li>    
+              </ul>
+            </div>
+          </li>
+              
+           <li> <a href="#">BLOG   <i class="fa-solid fa-angle-down"></i></a>
+            <div class="sub-menu-1">
+              <ul> 
+                <li > <a href="#">BLOG LAYOUTS </a></li>
+                <li > <a href="#">NO SIDEBAR  </a></li>
+                <li > <a href="#">HAS SIDEBAR  </a></li>
+                <li > <a href="#">BLOG GRID </a></li>
+                <li > <a href="#">BLOG LIST  </a></li>
+                <li > <a href="#">BLOG STANDARD  </a></li>    
+              </ul>
+            </div></li>
+           <li> <a href="#">PAGES  <i class="fa-solid fa-angle-down"></i></a>
+           <div class="sub-menu-1">
+            <ul> 
+              <li > <a href="#">CONTACT US </a></li>
+              <li > <a href="#">PAGE 404</a></li>
+            </ul>
+
+              </div>
+            
+            </li>        
+           <li> <a href="#">ABOUT </a></li>            
+           </ul>
+      </div>
+
+      <div class="button-login"><button>Login</button></div>
+    </section> 
+    <section class="section-3">
+       <div class="left-3">
+           <div class="box-1">
+
+            
+            <img src="https://designingoutcomes.com/wp-content/uploads/revslider/sleeklandingpage/plant.png">
+            <p class="title-1">
+              Greenplantoz Best Collection
+              <br>
+              <br>
+              <span  class="first-text">Inspiration</span>  <br>
+                 <span class="second-text" id="element"></span>
+                 <br>
+                 <br>
+           
+            </p>
+            
+           </div>
+           <button>SHOP NOW</button>
+       </div>
+       <div class="right-3">
+         <div class="box-2"> 
+         
+          <img src="https://lh3.googleusercontent.com/pw/ABLVV86CoOUtkGvVu29O9Y7rYG23OsxMPdkCnNptM-lm1jtW7yVckLHVqUH5TpW2paiVLDFat_fO46kizc4C_tWJTxlWUPbx-oq3CG3jbZ5hVaBtII09-5z__7MhmiWZxZhV_ZyLZ0sMQCbWSn8IOpoy8CZh=w1626-h1626-s-no-gm?authuser=0">
+         <div class="box-3">
+          <img src="https://lh3.googleusercontent.com/pw/ABLVV85n6MEZ4KRbZS-e2F09VViS-q3biBDV3yyXh3esI2LdHF8gYvoyJhdL0yKLRhJow3KfIQF5ywhDANhYw8D4azOHZn3c10r62r25d4ajUuhq9H6HglZmvfMc01vUmfvT3lasJz1qNMOwjgSwNXiLou3h=w1300-h1626-s-no-gm?authuser=0">
+         </div>
+       </div>
+    </section>
+  </main>
+</body>
+<script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+    document.getElementById("nav").classList.toggle("changes");
+  }
+</script>
+<script>
+ var typed = new Typed('#element', {
+  strings: ['Plants', 'Hanging Plants','Grow Orchids Plants'],
+  smartBackspace: true, // Default value
+});
+</script>
+</html>
